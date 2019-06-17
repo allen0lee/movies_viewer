@@ -19,7 +19,7 @@ get '/movie' do
     title = URI.escape(params['title']) # deal with special character like: Amélie
 
     #get response back from omdb api in json
-    url = "http://www.omdbapi.com/?s=#{title}&apikey=#{ENV['OMDB_API_KEY']}"
+    url = "http://www.omdbapi.com/?s=#{title}&apikey=2f6435d9}"
     result = HTTParty.get(url) # convert json to ruby hash
 
     if result["Response"] == "False"
@@ -35,7 +35,7 @@ get '/movie' do
             if Movie.where(title: @search_list_titles.first).empty? == true
                 @title = @search_list_titles.first
 
-                new_url = "http://www.omdbapi.com/?t=#{@title}&apikey=#{ENV['OMDB_API_KEY']}"
+                new_url = "http://www.omdbapi.com/?t=#{@title}&apikey=2f6435d9}"
                 new_result = HTTParty.get(new_url)
 
                 @poster = new_result["Poster"]
@@ -77,7 +77,7 @@ get '/movie_infor/:movie_title' do
     if Movie.where(title: params[:movie_title]).empty? == true
         title = URI.escape(params[:movie_title])
 
-        movie_url = "http://www.omdbapi.com/?t=#{title}&apikey=#{ENV['OMDB_API_KEY']}"
+        movie_url = "http://www.omdbapi.com/?t=#{title}&apikey=2f6435d9}"
         movie_details = HTTParty.get(movie_url)
 
         @poster = movie_details["Poster"]
