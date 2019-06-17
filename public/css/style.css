@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato&display=swap"); 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 0 10% 0 10%;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background: url('/sakura.png');
+    background-size: cover;
+}
+
+.icon {
+    margin: 20px 0 20px 0;
+    border: 7px solid white;
+    border-radius: 20px;
+    width: 10%;
+}
+
+.nav-bar {
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+}
+
+.nav-bar nav {
+    display: flex;                
+    flex-direction: row;
+    margin: 0 auto;    
+}
+
+.nav-bar nav div {
+    margin: 0 10px 0 10px;
+}
+
+.index-container {
+    text-align: center;
+    padding-top: 0.5em;
+    background-color: mistyrose;
+    border: 1px solid tomato;
+    border-top: none;
+    height: 100vh;
+}
+
+.input-field {
+    font-family: 'Lato', sans-serif;
+    height: 3em;
+    width: 30%;
+    margin-bottom: 2em;
+}
+
+.search-btn {
+    font-family: 'Lato', sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: ivory;
+    color: #4CAF50;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search-list-container {
+    text-align: center;
+    padding-top: 2em;
+    background-color: mistyrose;
+    border: 1px solid tomato;
+    border-top: none;
+    height: 100vh;
+}
+
+.search-list-container div {
+    margin-bottom: 1em;
+}
+
+.search-list-container a {
+    color: blue;
+}
+
+.search-list-container a:visited {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 0.5em 0;
+    background-color: mistyrose;
+    border: 1px solid tomato;
+    border-top: none;
+    border-bottom: none;
+}
+
+.container img {
+    width: 80%;
+}
+
+.container table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+.container table tr {
+    border-bottom: 0.5px solid black;
+}
+
+.container table td {
+    border-right: 0.5px solid black;
+}
+
+.movie-plot {
+    background-color: mistyrose;
+    border: 1px solid tomato;
+    text-align: left;
+    padding-left: 1.5em;
+}
+
+.about, .not-found {
+    background-color: mistyrose;
+    border: 1px solid tomato;
+    padding: 0.1em 0 0 1.5em;
+    border-top: none;
+    height: 100vh;
+}
+

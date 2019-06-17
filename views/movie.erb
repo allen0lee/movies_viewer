@@ -1,0 +1,59 @@
+<div class="container">
+
+    <main>
+        <img src="<%= @poster %>" alt="">
+    </main>
+
+    <aside>
+        <table>    
+            <tr>
+                <td>Title</td>
+                <td><%= @title %></td>
+            </tr>
+        
+            <tr>
+                <td>Year</td>
+                <td><%= @year %></td>
+            </tr>
+        
+            <tr>
+                <td>Rated</td>
+                <td><%= @rated %></td>
+            </tr>
+        
+            <tr>
+                <td>Runtime</td>
+                <td><%= @runtime %></td>
+            </tr>
+        
+            <tr>
+                <td>Director</td>
+                <td><%= @director %></td>
+            </tr>
+        
+            <tr>
+                <td>Actors</td>
+                <td>
+                    <% @actors.split(", ").each do |actor| %>
+                    <%= actor %>
+                    <br>
+                    <% end %>
+                </td>
+            </tr>
+
+            <tr>
+                <td>IMDB Rating</td>
+                <td><%= @imdb_rating %>/10</td>
+            </tr>
+        </table>
+    </aside>
+</div>
+
+<div class="movie-plot"><p><%= @plot %></p></div>
+
+
+
+
+
+
+
